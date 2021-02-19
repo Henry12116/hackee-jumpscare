@@ -32,3 +32,13 @@ RegisterCommand("jumpscareoff", function(source, args)
         TriggerClientEvent("jumpscare:toggleNUI", target, false)
     end
 end)
+
+function checkAllowed(id)
+	for k, v in pairs(allowed) do
+		if id == v then
+			return true
+		end
+    end
+    
+	return false
+end
