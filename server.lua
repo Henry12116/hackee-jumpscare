@@ -1,11 +1,11 @@
 local allowed =
 {
-    "ADMIN",
-    "STEAM IDs",
-    "GO",
-    "HERE"
+    "steam:steamhex1",
+    "steam:steamhex2",
+    "steam:steamhex3",
+    "steam:steamhex4"
 }
-
+--You can get your steamhex from http://www.vacbanned.com/ and entering your steam id then copying Steam3 ID (64bit) HEX and not DEC
 RegisterCommand("jumpscareon", function(source, args)
     -- Usage: /jumpscareon <ID>
     -- Creates a popup on the players screen and starts playing a sound.
