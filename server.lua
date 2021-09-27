@@ -13,6 +13,7 @@ RegisterCommand("jumpscareon", function(source, args)
     if checkAllowed(identifier) then
       if args[1] == nil then
         print("^1Error, you must provide a player ID.")
+	return
       end
       local target = args[1]
       TriggerClientEvent("jumpscare:toggleNUI", target, true)
@@ -26,6 +27,7 @@ RegisterCommand("jumpscareoff", function(source, args)
     if checkAllowed(identifier) then
         if args[1] == nil then
         print("^1Error, you must provide a player ID.")
+	return
         end
 
         local target = args[1]
