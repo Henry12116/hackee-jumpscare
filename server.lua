@@ -26,8 +26,8 @@ RegisterCommand("jumpscareoff", function(source, args)
     local identifier = GetPlayerIdentifiers(source)[1]
     if checkAllowed(identifier) then
         if args[1] == nil then
-        print("^1Error, you must provide a player ID.")
-	return
+            print("^1Error, you must provide a player ID.")
+	    return
         end
 
         local target = args[1]
@@ -36,11 +36,10 @@ RegisterCommand("jumpscareoff", function(source, args)
 end)
 
 function checkAllowed(id)
-	for k, v in pairs(allowed) do
-		if id == v then
-			return true
-		end
+    for k, v in pairs(allowed) do
+        if id == v then
+	    return true
+        end
     end
-    
-	return false
+    return false
 end
